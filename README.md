@@ -10,19 +10,19 @@ A simple Google Apps Script that automatically color-codes your Google Calendar 
 
 ## ⚙️ Configuration (Important!)
 
-The script uses a list of keywords to decide which color to apply. **You must customize this list to match your own schedule.**
+The script uses a map of keywords to decide which color to apply. **You must customize this list to match your own schedule.**
 
 1.  Open the `main.js` file.
 2.  Locate the `KEYWORD_COLOR_MAP` object.
-3.  **Replace the placeholders:** You will see keys like `"[STUDY]"`, `"[WORKOUT]"`, etc. You should change the text inside the quotes to the actual words you use in your calendar.
+3.  **Replace the placeholders:** The default code contains placeholders in brackets like `"[STUDY]"`. You must replace these with the actual words you use in your calendar.
 
 **Example:**
-If you write "Math Homework" in your calendar, change:
+If you want to colorize events named "Math Homework", change:
 `"[STUDY]": CalendarApp.EventColor.MAUVE,`
 To:
-`"math": CalendarApp.EventColor.MAUVE,` (or `"homework"`)
+`"homework": CalendarApp.EventColor.MAUVE,`
 
-> **Note:** You do not need to keep the brackets `[]` unless you actually use them in your calendar event titles.
+> **Note:** You can remove the brackets `[]` and simply use the words (e.g., "gym", "meeting", "doctor").
 
 ## 🛠️ Installation
 
@@ -36,5 +36,12 @@ To:
 
 ## 📄 License
 
-Copyright (C) 2026 Ika Elguez. All Rights Reserved.
-Unauthorized copying of this file, via any medium, is strictly prohibited.
+**Personal Use Only**
+
+Copyright (C) 2026 Ika Elguez.
+
+This project is free to use for **private, non-commercial purposes**.
+* ✅ You may use this script to colorize your own personal Google Calendar.
+* ✅ You may modify the code to suit your personal needs.
+* ❌ You may **not** use this script for commercial purposes.
+* ❌ You may **not** sell, redistribute, or bundle this script with paid services.
