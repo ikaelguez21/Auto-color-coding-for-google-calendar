@@ -1,40 +1,36 @@
 /*
  * Copyright (C) 2026 Ika Elguez. All Rights Reserved.
  *
- * Unauthorized copying of this file, via any medium is strictly prohibited.
- * This software is proprietary and confidential.
+ * This software is provided for private, non-commercial use only.
+ * You are free to use, modify, and run this script for your own personal calendar.
+ *
+ * Commercial use, redistribution, or inclusion in any paid product or service
+ * is strictly prohibited without prior written permission from the author.
  */
 
 const KEYWORD_COLOR_MAP = {
-//puprle is collage related 
-"[STUDY]": CalendarApp.EventColor.MAUVE,
+  // Purple is college related 
+  "[STUDY]": CalendarApp.EventColor.MAUVE,
 
-
-//pale red is for any workout
+  // Pale red is for any workout
   "[WORKOUT]": CalendarApp.EventColor.PALE_RED,
-
   
-  //  gray is for any comute 
- "[travel]": CalendarApp.EventColor.GRAY,
+  // Gray is for any commute 
+  "[TRAVEL]": CalendarApp.EventColor.GRAY,
 
-  //  yellow is for work related 
+  // Yellow is for work related 
   "[WORK]": CalendarApp.EventColor.YELLOW,
 
-
-//red is for any medical appointmet
+  // Red is for any medical appointment
   "[MEDICAL]": CalendarApp.EventColor.RED,
 
-
-// blue is for vacations
+  // Blue is for vacations
   "[VACATIONS]": CalendarApp.EventColor.BLUE,
-
 
   "[EMPTY]": CalendarApp.EventColor.PALE_GREEN,
 
-
-//green is social events
+  // Green is for social events
   "[SOCIAL]": CalendarApp.EventColor.GREEN,
-
 };
 
 function checkAndColorEvents() {
